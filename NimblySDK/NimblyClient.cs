@@ -21,6 +21,8 @@ namespace NimblySDK
         public string altBaseURL { get; set; } = null;
 #if DEBUG
         private const string apiBaseURL = "http://localhost:53082/";
+#elif Kamino
+        private const string apiBaseURL = "https://kamino.tech/";
 #else
         private const string apiBaseURL = "https://nimbly-interfaceapi.azurewebsites.net/";
 #endif
